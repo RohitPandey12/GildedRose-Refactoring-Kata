@@ -26,7 +26,10 @@ class GildedRose
                 item.quality = item.quality + 1
               end
             end
+          elsif item.name = "Conjured"
+            item.quality = item.quality - 2*(item.quality)
           end
+
         end
       end
       if item.name != "Sulfuras, Hand of Ragnaros"
